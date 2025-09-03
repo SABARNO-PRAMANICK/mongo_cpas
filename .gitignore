@@ -1,0 +1,50 @@
+
+# Python virtual 
+venv
+venv/
+env/
+.env
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Static files (if you add favicon or other static assets)
+# Uncomment if you want to include static files in git
+# static/
+
+# Environment variables
+.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Dependency directories
+node_modules/  # In case you add frontend dependencies later
+
+# Coverage reports
+coverage/
+.coverage
+*.lcov
+
+# Testing and build artifacts
+.pytest_cache/
+.tox/
+dist/
+build/
+*.egg-info/
