@@ -5,7 +5,8 @@ import uvicorn
 import logging
 from datetime import datetime
 from pymongo.errors import DuplicateKeyError, OperationFailure
-import crud  
+import crud
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -73,4 +74,5 @@ async def update_input_partial(
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
